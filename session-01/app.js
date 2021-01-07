@@ -79,6 +79,6 @@ const questionsList = [ fistQuestion , {
 // }
 
 inquirer
-.prompt(questionsList)   // <= wait
-//.then( (answer)=> console.log( answers ));
-.then( answers => console.log( answers ));
+  .prompt(questionsList)   // <= wait
+  //.then( (answer)=> console.log( answers ));
+  .then( answers => console.log( answers ));
