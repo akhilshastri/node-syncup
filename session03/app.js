@@ -35,4 +35,18 @@ program
 
   });
 
+// program
+//   .command('rest')
+//   .option('-sl, --sqlite', 'to SQLite db')
+//   .option('-ms, --mssql', 'to MSSQLserver ')
+//   .description('save excel data to database') // <=
+//   .action(async (file, options) => {
+//       console.log( `reading excel file => ${file}  and save to  ${options.sqlite ? 'SQLite' :'MSSQLserver'  } `);
+//       const data = restData() ;
+//       // await db.save(data,options).into('users');
+//       console.log(` Saved ${data.length} rows` ) ;
+//
+//   });
+
+
 program.parse(process.argv);
