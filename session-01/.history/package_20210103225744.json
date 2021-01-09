@@ -1,0 +1,13 @@
+{
+  "name": "my-first-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "akhil":"node app.js",
+    "welcome": "ls"
+  },
+  "author": "akhilshastri",
+  "license": "ISC"
+}

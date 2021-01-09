@@ -1,0 +1,22 @@
+{
+  "name": "session03",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "xlss": "app.js"
+  },
+  "keywords": [],
+  "author": "akhilshastri",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^6.2.1",
+    "knex": "^0.21.15",
+    "mssql": "^6.3.1",
+    "sqlite3": "^5.0.1",
+    "xlsx": "^0.16.9"
+  }
+}
