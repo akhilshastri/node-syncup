@@ -8,10 +8,15 @@ import { AuthService } from './auth/auth.service';
 import { LocalStrategy } from './auth/local.strategy';
 
 @Module({
-  imports: [PassportModule, JwtModule.register({
+  imports: [
+      PassportModule,
+    JwtModule.register({
     secret: 'SCERATE',
     signOptions: { expiresIn: '300s' },
   }),],
+
+
+
   controllers: [AppController, AuthController],
   providers: [AppService,LocalStrategy,AuthService],
 })

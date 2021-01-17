@@ -8,15 +8,15 @@ export class AuthService {
         private jwtService: JwtService
     ) {}
 
-     varidateUser(username,pwd){
+     validateUser(username,pwd){
         if (username!==pwd){
             return false;
         }
-        return ({username,pwd});
+        return ({username,pwd}); // => user
     }
 
     async login(user: any) {
-        const payload = { username: user.username, sub: user.userId };
+        const payload = { username: user.username, sub: 100 };
         return {
             access_token: this.jwtService.sign(payload),
         };
