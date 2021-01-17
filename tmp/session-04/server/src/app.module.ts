@@ -7,6 +7,8 @@ import { AuthController } from './auth/auth.controller';
 import { AuthService } from './auth/auth.service';
 import { LocalStrategy } from './auth/local.strategy';
 import {JwtStrategy} from "./auth/jwt.strategy";
+import { MyDbModule } from './my-db/my-db.module';
+import { XlImportService } from './xl-import/xl-import.service';
 
 @Module({
   imports: [
@@ -14,11 +16,12 @@ import {JwtStrategy} from "./auth/jwt.strategy";
     JwtModule.register({
     secret: 'SCERATE',
     signOptions: { expiresIn: '300s' },
-  }),],
+  }),
+    MyDbModule,],
 
 
 
   controllers: [AppController, AuthController],
-  providers: [AppService,LocalStrategy,AuthService,JwtStrategy],
+  providers: [AppService,LocalStrategy,AuthService,JwtStrategy, XlImportService],
 })
 export class AppModule {}
