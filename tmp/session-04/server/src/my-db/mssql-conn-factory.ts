@@ -12,13 +12,7 @@ export const SQLiteCONNProvider = {
             client: 'mssql',
             debug:false,
             connection: {
-                "host" : "64.62.143.78",
-                "user" : "akhiltech_user",
-                "password" : "Algo#123",
-                "database": "akhiltech_db",
-                "options": {
-                    "encrypt":false,
-                }
+
             }
         }) ;
 
